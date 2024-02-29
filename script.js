@@ -2,7 +2,7 @@ fetch('https://api.npoint.io/7bbd3a59c401f616bb89')
   .then(res => res.json())
   .then(data => {
     const cityContainer = document.getElementById('cityContainer');
-    var data = JSON.stringify([{ "model": "city.state", "pk": 1, "fields": { "state": "city.state", "area": 1 } }]);
+    var data = JSON.stringify([{ "model": "cityDetails", "fields": { "state": "city.state", "area": "city.area","area": "city.area" } }]);
     data = JSON.parse(data);
     data.forEach(city => {
       const cityCard = document.createElement('div');
